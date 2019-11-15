@@ -14,8 +14,6 @@ $ git push --force-with-lease
 
 ## Merge Conflicts
 
-### Step 1: Fnd & Fix Conflicts
-
 * In terminal, when rebasing, it will show any conflicts with the file name and line number.
 * Find those files and correct the conflicts.
 * After all conflicts have been fixed, run the command below:
