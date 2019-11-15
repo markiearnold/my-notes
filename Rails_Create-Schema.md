@@ -10,7 +10,7 @@ rails g model Category name:string
 ```
 
 ## Generate Associations
-Example: *Pages* can belong to a *category*.
+Example: **Pages** can belong to a **category**.
 
 *Page association*
 In your `models/page.rb` file, add association
