@@ -2,7 +2,7 @@
 
 ## Delete
 
-### Force Delete and Children Migration
+### Force Delete and Children
 
 ```ruby
 drop_table :accounts, force: :cascade
