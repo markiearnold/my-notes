@@ -1,4 +1,6 @@
-# Terminal: Add local project to existing empty repo
+## Start Repository
+
+#### Add local project to existing empty repo
 
 ```bash
 $ git init
