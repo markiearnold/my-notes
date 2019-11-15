@@ -1,4 +1,4 @@
-# Create Schema
+# Rails: Create Schema
 
 ## Create Models
 Exclude columns that would be Foriegn Keys
