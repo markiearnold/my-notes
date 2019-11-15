@@ -2,7 +2,7 @@
 
 ## Add
 
-### Add Column to existing model
+#### Add Column to existing model
 
 ```ruby
 rails g migration AddAddressToUser address:string
@@ -11,13 +11,13 @@ rake db:migrate
 
 ## Delete
 
-### Force Delete and Children
+#### Force Delete and Children
 
 ```ruby
 drop_table :accounts, force: :cascade
 ```
 
-### Remove Column from existing model
+#### Remove Column from existing model
 
 ```ruby
 rails g migration RemoveCountryFromSampleApps country:string
@@ -26,7 +26,7 @@ rails db:migrate
 
 ## Associations
 
-### Remove Association in Database
+#### Remove Association in Database
 
 ```ruby
 def self.up
