@@ -9,7 +9,7 @@ git remote -v
 * This command returns a string that starts with `https://`.  If so, view #1
 * This command returns a string that starts with `git@`.  If so, view #2
 
-### #1: Use SSH
+### 1: Use SSH
 
 1. Since we use 2-factor authentication on Github, we need to use SSH instead of HTTPS.
 
@@ -21,7 +21,7 @@ $ git remote remove origin
 $ git remote add origin git@github.com:user/repo.git  
 ```
 
-### #2: Add SSH Key
+### 2: Add SSH Key
 
 2. I need to make sure that my SSH key is added.
 
