@@ -3,7 +3,7 @@
 ## Am I using SSH?
 
 ```bash
-git remote -v 
+$ git remote -v 
 ```
 
 * This command returns a string that starts with `https://`.  If so, view #1
