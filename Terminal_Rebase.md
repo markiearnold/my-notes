@@ -28,3 +28,11 @@ $ git rebase --continue
 ```bash
 $ git push --force-with-lease
 ```
+
+## Stop Rebase
+
+If you no longer want to rebase, and want to back out of all changes - you can stop a rebase with the following command:
+
+```bash
+$ git rebase --abort
+```
