@@ -1,7 +1,7 @@
 # Heroku: Errors
 
 ## Issues
-```
+```bash
 remote:  !     Could not detect rake tasks
 remote:  !     ensure you can run `$ bundle exec rake -P` against your app
 remote:  !     and using the production group of your Gemfile.
@@ -14,14 +14,15 @@ remote:  !
 ```
 
 ## Fix
-```
+```bash
 gem install bundler -v 2.0.2
 bundle update --bundler
 # commit changes & redeploy
 ```
 
 ## In order for your Webpacker app to run on Heroku, you’ll need to do a bit of configuration before hand.
-```
+
+```bash
 heroku create my-webpacker-heroku-app
 heroku addons:create heroku-postgresql:hobby-dev
 heroku buildpacks:add heroku/nodejs
