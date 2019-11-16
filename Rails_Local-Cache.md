@@ -1,4 +1,4 @@
-# Terminal: Rails Local Cache
+# Rails: Local Cache
 
 ```bash
 # Turn on local cachine (data)
