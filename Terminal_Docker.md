@@ -9,7 +9,7 @@ docker volume rm your_volume
 
 ## Prune
 
-#### Containers
+### Containers
 This will remove:
 * all stopped containers
 * all networks not used by at least one container
@@ -20,7 +20,7 @@ This will remove:
 $ docker system prune
 ```
 
-#### Containers and Volumes
+### Containers and Volumes
 This will remove:
 * all stopped containers
 * all networks not used by at least one container
