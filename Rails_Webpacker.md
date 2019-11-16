@@ -1,7 +1,7 @@
 # Rails: Webpacker
 
 ```erb
-# Pack tag
+// Pack tag
 <%= javascript_pack_tag "application" %>
 ```
 
