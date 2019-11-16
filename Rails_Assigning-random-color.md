@@ -1,3 +1,5 @@
+Rails: Assigning Custom Color
+
 ```ruby
 # model.rb
 def color
