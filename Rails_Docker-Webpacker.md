@@ -84,7 +84,7 @@ else
 fi
 ```
 
-```
+```sh
 FROM phusion/passenger-customizable:0.9.27
 ARG precompileassets
 
