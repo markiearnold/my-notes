@@ -1,8 +1,8 @@
 # Terminal: GIT Interactive Rebase
 
 ```bash
-git log
-git rebase -i [sha]
+$ git log
+$ git rebase -i [sha]
 
 # insert
 # change pick to f to put in last (above)
@@ -10,6 +10,6 @@ git rebase -i [sha]
 esc
 :wq
 
-rename commit message
-git rebase --continue
+# rename commit message
+$ git rebase --continue
 ```
