@@ -1,6 +1,6 @@
 ## Terminal: GIT Cheatsheet
 
-## git
+## Overview
 
     $ g remote add origin https://darllxd@github.com/ueccssrnd/name-of-project.git
     $ g remote set-url origin git://new.url.here
@@ -49,6 +49,7 @@
 
     $ g clone https://daryllxd@bitbucket.org/icanpassaccounting/icpa.git icpa_redesign
 
+---
 
 ## Amend
 Amend a commit. Add more changes to the last commit. Change commit message.
