@@ -114,3 +114,7 @@
 <meta property="og:price:amount" content="15.00" />
 <meta property="og:price:currency" content="USD" />
 ```
+
+
+## Resources
+* [Must-Have Social Meta Tags for Twitter, Google, Facebook, & More](https://moz.com/blog/meta-data-templates-123)
