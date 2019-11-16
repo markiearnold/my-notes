@@ -56,14 +56,3 @@
 ## ALIASES-DESU for last
 
     $ g config --global alias.last ’log -1 HEAD’
-
-## heroku
-
-    $ heroku addons:add heroku-postgresql:dev
-    $ heroku pg:promote HEROKU_POSTGRESQL_BROWN
-    $ heroku apps:destroy app-to-be-destroyed
-
-See more at: http://blog.tacticalnuclearstrike.com/2012/07/sinatra-on-heroku/#sthash.gVoDFq4u.dpuf
-
-Revert to last commit: g reset --hard HEAD
-Remove untracked shit: g clean -fd
