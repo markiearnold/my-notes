@@ -3,7 +3,7 @@
 #### Install Project and database
 
 ```bash
-# cd to [project directory]/huddle
+# cd to [project directory]
 bundle install
 
 # setup database
