@@ -10,7 +10,7 @@ brew link --overwrite yarn
 Then try `yarn -v`
 
 
-## Install Yarn 1.13.9
+## Install Yarn 1.13.0
 
 ```bash
 brew unlink yarn || true
