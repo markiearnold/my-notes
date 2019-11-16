@@ -16,7 +16,7 @@ heroku  https://git.heroku.com/thawing-inlet-61413.git (push)
 
 ## Deploy
 
-### Deploy master
+#### Deploy master
 
 ```bash
 $ git push heroku master
@@ -25,7 +25,7 @@ $ git push heroku master
 > ...
 ```
 
-### Deploy a branch
+#### Deploy a branch
 
 ```bash
 $ git push heroku testbranch:master
