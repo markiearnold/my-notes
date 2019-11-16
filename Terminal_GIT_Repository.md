@@ -6,7 +6,7 @@
 $ git init
 $ git add README.md
 $ git commit -m "first commit"
-$ git remote add origin https://github.com/user/repo
+$ git remote add origin git@github.com:USERNAME/REPOSITORY.git
 $ git push -u origin master
 ```
 
