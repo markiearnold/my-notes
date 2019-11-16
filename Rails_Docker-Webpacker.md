@@ -84,7 +84,7 @@ else
 fi
 ```
 
-```sh
+```bash
 FROM phusion/passenger-customizable:0.9.27
 ARG precompileassets
 
@@ -122,4 +122,24 @@ ADD --chown=app:app . /home/app/src
 RUN mkdir /etc/service/puma && ln -s /home/app/src/services/puma.sh /etc/service/puma/run
 
 RUN /startup.sh $precompileassets
+```
+
+```js
+// config/webpack/development.js
+
+process.env.NODE_ENV = process.env.NODE_ENV || 'development'
+
+const CleanWebpackPlugin = require("clean-webpack-plugin")
+const path = require("path")
+const environment = require('./environment')
+
+environment.plugins.append(
+  "CleanWebpackPlugin",
+  new CleanWebpackPlugin({
+    root: path.resolve(__dirname, "../../public"),
+    verbose: true
+  })
+)
+
+module.exports = environment.toWebpackConfig()
 ```
