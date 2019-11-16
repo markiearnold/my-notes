@@ -1,5 +1,7 @@
 # Routing
 
+## Custom methods on resource
+
 ```ruby
 resources :teams do
   get :recap
@@ -12,4 +14,10 @@ resources :teams do
     end
   end
 end
+```
+
+## Back
+
+```ruby
+link_to 'Back', 'javascript:history.back()'
 ```
