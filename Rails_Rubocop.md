@@ -1,7 +1,11 @@
 # Rails: Rubocop
 
+```bash
+# Generate todo file
+$ rubocop --auto-gen-config --exclude-limit 500
 ```
-rubocop --auto-gen-config --exclude-limit 500
 
-rubocop -a
+```bash
+# Autocorrect errors
+$ rubocop -a
 ```
