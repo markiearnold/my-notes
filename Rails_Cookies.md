@@ -1,6 +1,6 @@
 # Rails: Cookies
 
-## You can set and delete cookies as shown below:
+You can set and delete cookies as shown below:
 ```ruby
 cookies[:key] = {
        :value => 'a yummy cookie',
