@@ -1,3 +1,11 @@
+## View Repository URL
+
+```bash
+$ git remote -v
+> origin	git@github.com:USERNAME/REPOSITORY.git (fetch)
+> origin	git@github.com:USERNAME/REPOSITORY.git (push)
+```
+
 ## Start Repository
 
 #### Add local project to existing empty repo
