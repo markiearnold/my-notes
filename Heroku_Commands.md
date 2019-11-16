@@ -4,14 +4,14 @@
 
 ```bash
 $ heroku create
-Creating app... done, ⬢ thawing-inlet-61413
-https://thawing-inlet-61413.herokuapp.com/ | https://git.heroku.com/thawing-inlet-61413.git
+> Creating app... done, ⬢ thawing-inlet-61413
+> https://thawing-inlet-61413.herokuapp.com/ | https://git.heroku.com/thawing-inlet-61413.git
 ```
 
 ```bash
 git remote -v
-heroku  https://git.heroku.com/thawing-inlet-61413.git (fetch)
-heroku  https://git.heroku.com/thawing-inlet-61413.git (push)
+> heroku  https://git.heroku.com/thawing-inlet-61413.git (fetch)
+> heroku  https://git.heroku.com/thawing-inlet-61413.git (push)
 ```
 
 ## Deploy
