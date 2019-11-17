@@ -26,3 +26,9 @@ private
     )
   end
 ```
+
+```ruby
+# model.rb
+
+after_create_commit {EventBroadcastJob.perform_later self, Event.where(read: [false, nil], user: self.user_id).count}
+```
