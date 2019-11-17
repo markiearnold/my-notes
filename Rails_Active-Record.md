@@ -81,3 +81,15 @@ User.destroy_by(name: 'David')
 # delete all users
 User.destroy_all
 ```
+
+## Validation
+
+```ruby
+class User < ApplicationRecord
+  validates :name, presence: true
+end
+ 
+user = User.new
+user.save  # => false
+user.save! # => ActiveRecord::RecordInvalid: Validation failed: Name can't be blank
+```
