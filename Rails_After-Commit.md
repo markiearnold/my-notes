@@ -32,3 +32,14 @@ private
 
 after_create_commit {EventBroadcastJob.perform_later self, Event.where(read: [false, nil], user: self.user_id).count}
 ```
+
+```ruby
+  def create_event
+    # Only notify ticket owner if reply is from another person
+    if self.ticket.user_id != self.user_id
+      title = "Support Ticket ##{self.ticket.id}"
+      link = ticket_path(self.ticket)
+      Event.create message: "#{self.user.first_name} #{self.user.last_name} replied: \"#{self.reply.first(80)}\"", user_id: self.ticket.user_id, title: title, link: link
+    end
+  end
+```
