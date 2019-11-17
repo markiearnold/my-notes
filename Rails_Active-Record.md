@@ -3,7 +3,7 @@
 ## Create
 
 ```ruby
-@new_course = Course.new
+@new_user = User.new
 ```
 
 ```ruby
