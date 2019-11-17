@@ -1,6 +1,6 @@
 # Ruby: Convert Strings to Url
 
-#### uri
+#### URI encode
 
 ```ruby
 require 'uri'
@@ -15,7 +15,7 @@ uri_string = URI::encode("http://localhost:3000/stuff?owner=foo bar+type=video g
 ```
 
 
-#### cgi 
+#### CGI escape 
 
 ```ruby
 require 'cgi'
