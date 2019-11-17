@@ -93,3 +93,26 @@ user = User.new
 user.save  # => false
 user.save! # => ActiveRecord::RecordInvalid: Validation failed: Name can't be blank
 ```
+
+## Examples
+
+```ruby
+# controller.rb
+
+def mark_all_read(user)
+  user.events.update_all("read = true")
+  redirect_back(fallback_location: root_path)
+end
+helper_method :mark_all_read
+```
+
+```ruby
+# controller.rb
+
+def mark_read(event_id)
+  selected_event = Event.where(id: event_id).first
+  selected_event.update_attribute(:read, true)
+  redirect_back(fallback_location: root_path)
+end
+helper_method :mark_read
+```
