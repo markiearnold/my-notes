@@ -94,7 +94,7 @@ user.save  # => false
 user.save! # => ActiveRecord::RecordInvalid: Validation failed: Name can't be blank
 ```
 
-## Examples
+## Other Examples
 
 ```ruby
 # controller.rb
