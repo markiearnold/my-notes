@@ -2,6 +2,7 @@
 
 ## After Create
 
+#### Example 1
 ```ruby
 # model.rb
 
@@ -27,13 +28,19 @@ private
   end
 ```
 
+#### Example 2
 ```ruby
 # model.rb
 
 after_create_commit {EventBroadcastJob.perform_later self, Event.where(read: [false, nil], user: self.user_id).count}
 ```
 
+#### Example 3
 ```ruby
+  # model.rb
+  
+  after_create_commit	:create_event
+  
   def create_event
     # Only notify ticket owner if reply is from another person
     if self.ticket.user_id != self.user_id
