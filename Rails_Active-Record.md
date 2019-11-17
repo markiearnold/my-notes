@@ -48,3 +48,36 @@ users = User.where(:occupation => @occupation.id).ids
 # find all users named David who are Code Artists and sort by created_at in reverse chronological order
 users = User.where(name: 'David', occupation: 'Code Artist').order(created_at: :desc)
 ```
+
+
+## Update
+
+```ruby
+user = User.find_by(name: 'David')
+user.name = 'Dave'
+user.save
+```
+
+```ruby
+user = User.find_by(name: 'David')
+user.update(name: 'Dave')
+```
+
+```ruby
+User.update_all "max_login_attempts = 3, must_change_password = 'true'"
+```
+
+## Delete
+
+```ruby
+user = User.find_by(name: 'David')
+user.destroy
+```
+
+```ruby
+# find and delete all users named David
+User.destroy_by(name: 'David')
+ 
+# delete all users
+User.destroy_all
+```
