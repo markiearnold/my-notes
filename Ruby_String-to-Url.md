@@ -9,6 +9,12 @@ URI::encode("Friedrichtraße 123, Berlin, Germany")
 #=> "Friedrichtra%C3%9Fe%20123,%20Berlin,%20Germany"
 ```
 
+```ruby
+require 'uri'
+uri_string = URI::encode("http://localhost:3000/stuff?owner=foo bar+type=video game")
+```
+
+
 #### cgi 
 
 ```ruby
@@ -22,11 +28,4 @@ CGI.escape('Friedrichtraße 123, Berlin, Germany')
 
 ```ruby
 home_path(:address => 'Friedrichtraße 123, Berlin, Germany')
-```
-
-#### URL Encode
-
-```ruby
-require 'uri'
-uri_string = URI::encode("http://localhost:3000/stuff?owner=foo bar+type=video game")
 ```
