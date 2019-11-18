@@ -18,6 +18,7 @@ user.name = "David"
 user.occupation = "Code Artist"
 ```
 
+#### If a block is provided, both create and new will yield the new object to that block for initialization
 ```ruby
 user = User.new do |u|
   u.name = "David"
