@@ -6,6 +6,12 @@
 @new_user = User.new
 ```
 
+#### Create will create and save a new record into the database
+```ruby
+user = User.create(name: "David", occupation: "Code Artist")
+```
+
+#### Using the new method, an object can be instantiated without being saved
 ```ruby
 user = User.new
 user.name = "David"
@@ -13,15 +19,10 @@ user.occupation = "Code Artist"
 ```
 
 ```ruby
-user = User.new
-user.name = "David"
-user.occupation = "Code Artist"
-```
-
-```ruby
-user = User.new
-user.name = "David"
-user.occupation = "Code Artist"
+user = User.new do |u|
+  u.name = "David"
+  u.occupation = "Code Artist"
+end
 ```
 
 ## Read
