@@ -2,7 +2,7 @@
 
 ## Define Enum
 ```diff
-- Make sure that name defined in model is same as database column
+- Make sure that enum name defined in model is same as database column
 ```
 ```ruby
 # model.rb
