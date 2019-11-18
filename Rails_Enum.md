@@ -87,3 +87,10 @@ Which makes them easy to put into an HTML form:
   <%= f.select :phone_number_type, Phone.phone_number_types.keys %>
 </div>
 ```
+
+## Form
+Form not saving as integer, try the following:
+
+```erb
+<%= f.select(:role, User.roles.map {|key, role| [key.titleize, role]}) %>
+```
