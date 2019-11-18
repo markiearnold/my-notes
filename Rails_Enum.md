@@ -1,6 +1,9 @@
 # Rails: enum
 
 ## Define Enum
+```diff
+- Make sure that name defined in model is same as database column
+```
 ```ruby
 # model.rb
 enum role: [:user, :vip, :admin, :developer, :marketing, :support, :translator]
